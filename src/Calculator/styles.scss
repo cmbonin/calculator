@@ -1,0 +1,11 @@
+@mixin grid($grid-type, $args, $row-gap, $column-gap: $row-gap) {
+  @supports (display: grid) {
+    display: grid;
+    #{$grid-type}: #{$args};
+    grid-gap: rem($row-gap) rem($column-gap);
+  }
+}
+
+.grid {
+  background-color: pink;
+}
