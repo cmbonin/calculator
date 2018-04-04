@@ -1,14 +1,5 @@
 $border-radius: 5px;
 
-@mixin grid($grid-type, $args, $row-gap, $column-gap: $row-gap) {
-  @supports (display: grid) {
-    display: grid;
-    #{$grid-type}: #{$args};
-    grid-gap: rem($row-gap) rem($column-gap);
-  }
-}
-
-// @include grid('grid-template-rows', '1fr 2fr', 10px, 20px);
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
