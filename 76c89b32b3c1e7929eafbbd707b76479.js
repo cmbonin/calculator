@@ -137,7 +137,7 @@ module.exports = reloadCSS;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+      module.exports = {};
 },{"_css_loader":5}],15:[function(require,module,exports) {
 /*
 object-assign
@@ -285,7 +285,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],11:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -499,7 +499,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":20,"fbjs/lib/warning":21,"./lib/ReactPropTypesSecret":17}],12:[function(require,module,exports) {
+},{"fbjs/lib/invariant":20,"fbjs/lib/warning":21,"./lib/ReactPropTypesSecret":17}],11:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1859,7 +1859,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":11,"./cjs/react.development.js":12}],22:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":12,"./cjs/react.development.js":11}],22:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2411,7 +2411,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":9,"fbjs/lib/ExecutionEnvironment":22,"object-assign":15,"fbjs/lib/emptyFunction":19,"fbjs/lib/EventListener":23,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":25,"fbjs/lib/containsNode":26,"fbjs/lib/focusNode":27,"fbjs/lib/emptyObject":18}],32:[function(require,module,exports) {
+},{"react":9,"fbjs/lib/ExecutionEnvironment":22,"object-assign":15,"fbjs/lib/emptyFunction":19,"fbjs/lib/EventListener":23,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":25,"fbjs/lib/containsNode":26,"fbjs/lib/focusNode":27,"fbjs/lib/emptyObject":18}],31:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2442,7 +2442,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],29:[function(require,module,exports) {
+},{}],28:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2479,7 +2479,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":32}],31:[function(require,module,exports) {
+},{"./hyphenate":31}],32:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2509,7 +2509,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],28:[function(require,module,exports) {
+},{}],29:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2547,7 +2547,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":31}],14:[function(require,module,exports) {
+},{"./camelize":32}],14:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17905,7 +17905,7 @@ if ("development" !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":9,"fbjs/lib/invariant":20,"fbjs/lib/warning":21,"fbjs/lib/ExecutionEnvironment":22,"object-assign":15,"fbjs/lib/emptyFunction":19,"fbjs/lib/EventListener":23,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":25,"fbjs/lib/containsNode":26,"fbjs/lib/focusNode":27,"fbjs/lib/emptyObject":18,"prop-types/checkPropTypes":16,"fbjs/lib/hyphenateStyleName":29,"fbjs/lib/camelizeStyleName":28}],10:[function(require,module,exports) {
+},{"react":9,"fbjs/lib/invariant":20,"fbjs/lib/warning":21,"fbjs/lib/ExecutionEnvironment":22,"object-assign":15,"fbjs/lib/emptyFunction":19,"fbjs/lib/EventListener":23,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":25,"fbjs/lib/containsNode":26,"fbjs/lib/focusNode":27,"fbjs/lib/emptyObject":18,"prop-types/checkPropTypes":16,"fbjs/lib/hyphenateStyleName":28,"fbjs/lib/camelizeStyleName":29}],10:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17947,7 +17947,10 @@ if ("development" === 'production') {
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       module.exports = {
-  "grid": "_grid_1e8on_1"
+  "grid": "_grid_1tdel_1",
+  "display": "_display_1tdel_8",
+  "btnEquals": "_btnEquals_1tdel_13",
+  "btn": "_btn_1tdel_13"
 };
 },{"_css_loader":5}],6:[function(require,module,exports) {
 "use strict";
@@ -17986,104 +17989,107 @@ var Calulator = function (_React$Component) {
   _createClass(Calulator, [{
     key: "render",
     value: function render() {
-      console.log(_styles2.default);
       return _react2.default.createElement(
         "div",
         { className: "content" },
         _react2.default.createElement(
           "div",
           { className: _styles2.default.grid },
-          _react2.default.createElement("div", { id: "display", className: "display" }),
+          _react2.default.createElement("div", { id: "display", className: _styles2.default.display }),
           _react2.default.createElement(
             "button",
-            { id: "btn-equals", className: _styles2.default.btnEquals },
+            { id: "btn-equals", className: _styles2.default.btnEquals + " btn" },
             "="
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-plus", className: "btn-plus" },
-            "+"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-minus", className: "btn-minus" },
-            "-"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-times", className: "btn-times" },
-            "x"
-          ),
-          _react2.default.createElement("button", { id: "btn-divide", className: "btn-divide" }),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-clear", className: "btn-clear" },
+            { id: "btn-clear", className: "btn" },
             "C"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-del", className: "btn-del" },
+            { id: "btn-del", className: "btn" },
             "DEL"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-zero", className: "btn-zero" },
-            "0"
+            { id: "btn-pos-neg", className: "btn" },
+            "+/-"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-one", className: "btn-one" },
+            { id: "btn-plus", className: "btn" },
+            "+"
+          ),
+          _react2.default.createElement(
+            "button",
+            { id: "btn-one", className: "btn" },
             "1"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-two", className: "btn-two" },
+            { id: "btn-two", className: "btn" },
             "2"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-three", className: "btn-three" },
+            { id: "btn-three", className: "btn" },
             "3"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-four", className: "btn-four" },
+            { id: "btn-minus", className: "btn" },
+            "-"
+          ),
+          _react2.default.createElement(
+            "button",
+            { id: "btn-four", className: "btn" },
             "4"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-five", className: "btn-five" },
+            { id: "btn-five", className: "btn" },
             "5"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-six", className: "btn-six" },
+            { id: "btn-six", className: "btn" },
             "6"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-seven", className: "btn-seven" },
+            { id: "btn-times", className: "btn" },
+            "x"
+          ),
+          _react2.default.createElement(
+            "button",
+            { id: "btn-seven", className: "btn" },
             "7"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-eight", className: "btn-eight" },
+            { id: "btn-eight", className: "btn" },
             "8"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-nine", className: "btn-nine" },
+            { id: "btn-nine", className: "btn" },
             "9"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-dot", className: "btn-dot" },
-            "."
+            { id: "btn-divide", className: "btn" },
+            "/"
           ),
           _react2.default.createElement(
             "button",
-            { id: "btn-pos-neg", className: "btn-pos-neg" },
-            "+/-"
+            { id: "btn-zero", className: "btn" },
+            "0"
+          ),
+          _react2.default.createElement(
+            "button",
+            { id: "btn-dot", className: "btn" },
+            "."
           )
         )
       );
@@ -18204,7 +18210,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':45561/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':35985/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
