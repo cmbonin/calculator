@@ -1,3 +1,5 @@
+$border-radius: 5px;
+
 @mixin grid($grid-type, $args, $row-gap, $column-gap: $row-gap) {
   @supports (display: grid) {
     display: grid;
@@ -6,6 +8,31 @@
   }
 }
 
+// @include grid('grid-template-rows', '1fr 2fr', 10px, 20px);
 .grid {
-  background-color: pink;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+   "display display display display"
+   "clear delete percent operation"
+   "btn btn btn operation"
+   "btn btn btn operation"
+   "btn btn btn operation"
+   "zero decimal equals equals";
+}
+
+.display {
+  grid-area: display;
+  bordeR: 1px solid #ccc;
+  border-radius: $border-radius;
+}
+
+.btnEquals {
+  grid-area: equals;
+}
+
+.btn {
+  border-radius: $border-radius;
 }

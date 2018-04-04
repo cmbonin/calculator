@@ -1,40 +1,20 @@
-@media (min-width: 801px) {
-  .header {
-    margin-bottom: 20px; } }
+._grid_1tdel_1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  -ms-grid-rows: 100px 1fr;
+      grid-template-rows: 100px 1fr;
+  grid-template-areas: "display display display display" "clear delete percent operation" "btn btn btn operation" "btn btn btn operation" "btn btn btn operation" "zero decimal equals equals"; }
 
-.field-group {
-  display: flex;
-  align-items: center; }
+._display_1tdel_8 {
+  grid-area: display;
+  bordeR: 1px solid #ccc;
+  border-radius: 5px; }
 
-.input-fields {
-  display: flex;
-  flex-direction: column;
-  width: 90%; }
+._btnEquals_1tdel_13 {
+  grid-area: equals; }
 
-@media (min-width: 801px) {
-  .input-fields {
-    width: 40%;
-    min-width: 300px; } }
-
-.in-group {
-  margin-bottom: 20px; }
-
-.css-2-text .css-input-group {
-  order: 1; }
-
-.css-2-text .text-input-group {
-  order: 2; }
-
-.switch {
-  margin-left: 10px; }
-
-.switch:after {
-  content: '\21d4';
-  height: 20px;
-  width: 30px;
-  cursor: pointer;
-  display: block;
-  transform: rotate(90deg);
-  font-size: 35px; }
-._grid_1e8on_1 {
-  background-color: pink; }
+._btn_1tdel_13 {
+  border-radius: 5px; }
