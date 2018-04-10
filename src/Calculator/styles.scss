@@ -18,12 +18,25 @@ $border-radius: 5px;
   grid-area: display;
   bordeR: 1px solid #ccc;
   border-radius: $border-radius;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px 20px;
 }
 
 .btnEquals {
   grid-area: equals;
 }
 
-.btn {
-  border-radius: $border-radius;
+.total {
+  font-size: 200%;
+  min-height: 60%;
+}
+
+.equation {
+  font-size: 100%;
+  min-height: 20%;
+  color: #999;
 }

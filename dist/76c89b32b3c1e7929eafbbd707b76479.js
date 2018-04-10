@@ -138,7 +138,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       module.exports = {};
-},{"_css_loader":5}],15:[function(require,module,exports) {
+},{"_css_loader":5}],17:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -230,7 +230,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],18:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -248,7 +248,7 @@ if ("development" !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],19:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -285,7 +285,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],12:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -308,7 +308,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":15,"fbjs/lib/emptyObject":18,"fbjs/lib/emptyFunction":19}],20:[function(require,module,exports) {
+},{"object-assign":17,"fbjs/lib/emptyObject":21,"fbjs/lib/emptyFunction":20}],28:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -362,7 +362,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],21:[function(require,module,exports) {
+},{}],29:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -425,7 +425,7 @@ if ("development" !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":19}],17:[function(require,module,exports) {
+},{"./emptyFunction":20}],19:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -439,7 +439,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],16:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -499,7 +499,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":20,"fbjs/lib/warning":21,"./lib/ReactPropTypesSecret":17}],11:[function(require,module,exports) {
+},{"fbjs/lib/invariant":28,"fbjs/lib/warning":29,"./lib/ReactPropTypesSecret":19}],16:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1851,7 +1851,7 @@ if ("development" !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":15,"fbjs/lib/emptyObject":18,"fbjs/lib/invariant":20,"fbjs/lib/warning":21,"fbjs/lib/emptyFunction":19,"prop-types/checkPropTypes":16}],9:[function(require,module,exports) {
+},{"object-assign":17,"fbjs/lib/emptyObject":21,"fbjs/lib/invariant":28,"fbjs/lib/warning":29,"fbjs/lib/emptyFunction":20,"prop-types/checkPropTypes":18}],12:[function(require,module,exports) {
 'use strict';
 
 if ("development" === 'production') {
@@ -1859,7 +1859,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":12,"./cjs/react.development.js":11}],22:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":15,"./cjs/react.development.js":16}],22:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1968,7 +1968,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":19}],24:[function(require,module,exports) {
+},{"./emptyFunction":20}],24:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2071,7 +2071,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],33:[function(require,module,exports) {
+},{}],35:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2094,7 +2094,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],30:[function(require,module,exports) {
+},{}],32:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2117,7 +2117,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":33}],26:[function(require,module,exports) {
+},{"./isNode":35}],26:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2155,7 +2155,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":30}],27:[function(require,module,exports) {
+},{"./isTextNode":32}],27:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2411,7 +2411,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":9,"fbjs/lib/ExecutionEnvironment":22,"object-assign":15,"fbjs/lib/emptyFunction":19,"fbjs/lib/EventListener":23,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":25,"fbjs/lib/containsNode":26,"fbjs/lib/focusNode":27,"fbjs/lib/emptyObject":18}],31:[function(require,module,exports) {
+},{"react":12,"fbjs/lib/ExecutionEnvironment":22,"object-assign":17,"fbjs/lib/emptyFunction":20,"fbjs/lib/EventListener":23,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":25,"fbjs/lib/containsNode":26,"fbjs/lib/focusNode":27,"fbjs/lib/emptyObject":21}],33:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2442,7 +2442,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],28:[function(require,module,exports) {
+},{}],30:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2479,7 +2479,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":31}],32:[function(require,module,exports) {
+},{"./hyphenate":33}],34:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2509,7 +2509,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],29:[function(require,module,exports) {
+},{}],31:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2547,7 +2547,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":32}],14:[function(require,module,exports) {
+},{"./camelize":34}],14:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17905,7 +17905,7 @@ if ("development" !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":9,"fbjs/lib/invariant":20,"fbjs/lib/warning":21,"fbjs/lib/ExecutionEnvironment":22,"object-assign":15,"fbjs/lib/emptyFunction":19,"fbjs/lib/EventListener":23,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":25,"fbjs/lib/containsNode":26,"fbjs/lib/focusNode":27,"fbjs/lib/emptyObject":18,"prop-types/checkPropTypes":16,"fbjs/lib/hyphenateStyleName":28,"fbjs/lib/camelizeStyleName":29}],10:[function(require,module,exports) {
+},{"react":12,"fbjs/lib/invariant":28,"fbjs/lib/warning":29,"fbjs/lib/ExecutionEnvironment":22,"object-assign":17,"fbjs/lib/emptyFunction":20,"fbjs/lib/EventListener":23,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":25,"fbjs/lib/containsNode":26,"fbjs/lib/focusNode":27,"fbjs/lib/emptyObject":21,"prop-types/checkPropTypes":18,"fbjs/lib/hyphenateStyleName":30,"fbjs/lib/camelizeStyleName":31}],11:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17941,18 +17941,15 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":13,"./cjs/react-dom.development.js":14}],8:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":13,"./cjs/react-dom.development.js":14}],10:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       module.exports = {
-  "grid": "_grid_1tdel_1",
-  "display": "_display_1tdel_8",
-  "btnEquals": "_btnEquals_1tdel_13",
-  "btn": "_btn_1tdel_13"
+  "btn": "_btn_rc9l8_1"
 };
-},{"_css_loader":5}],6:[function(require,module,exports) {
+},{"_css_loader":5}],9:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17977,120 +17974,209 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var Button = function (_React$Component) {
+  _inherits(Button, _React$Component);
+
+  function Button(props) {
+    _classCallCheck(this, Button);
+
+    var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
+
+    _this.handleSelect = _this.handleSelect.bind(_this);
+    return _this;
+  }
+
+  _createClass(Button, [{
+    key: "handleSelect",
+    value: function handleSelect(val) {
+      if (this.props.onSelect) {
+        this.props.onSelect(this.props.value);
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var props = this.props;
+      var value = props.label ? props.label : props.value;
+      return _react2.default.createElement(
+        "button",
+        { className: _styles2.default.btn, onClick: this.handleSelect },
+        value
+      );
+    }
+  }]);
+
+  return Button;
+}(_react2.default.Component);
+
+exports.default = Button;
+},{"react":12,"./styles.scss":10}],8:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      module.exports = {
+  "grid": "_grid_ron9z_1",
+  "display": "_display_ron9z_8",
+  "btnEquals": "_btnEquals_ron9z_19",
+  "total": "_total_ron9z_22",
+  "equation": "_equation_ron9z_26"
+};
+},{"_css_loader":5}],6:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _component = require("../Button/component");
+
+var _component2 = _interopRequireDefault(_component);
+
+var _styles = require("./styles.scss");
+
+var _styles2 = _interopRequireDefault(_styles);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var Calulator = function (_React$Component) {
   _inherits(Calulator, _React$Component);
 
-  function Calulator() {
+  function Calulator(props) {
     _classCallCheck(this, Calulator);
 
-    return _possibleConstructorReturn(this, (Calulator.__proto__ || Object.getPrototypeOf(Calulator)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Calulator.__proto__ || Object.getPrototypeOf(Calulator)).call(this, props));
+
+    _this.calculate = _this.calculate.bind(_this);
+    _this.getTotal = _this.getTotal.bind(_this);
+    _this.clearDisplay = _this.clearDisplay.bind(_this);
+    _this.backspace = _this.backspace.bind(_this);
+    _this.state = {
+      equation: '',
+      total: ''
+    };
+    return _this;
   }
 
   _createClass(Calulator, [{
+    key: "calculate",
+    value: function calculate(val) {
+      var newEquation = this.state.equation + " " + val;
+      this.setState({ equation: newEquation });
+    }
+  }, {
+    key: "getTotal",
+    value: function getTotal() {
+      var newEquation = this.state.equation;
+      var converted = this.convertToEvalFormat(newEquation);
+      var total = eval(converted);
+      this.setState({ total: total });
+    }
+  }, {
+    key: "clearDisplay",
+    value: function clearDisplay() {
+      this.setState({
+        total: '',
+        equation: ''
+      });
+    }
+  }, {
+    key: "clearDisplay",
+    value: function clearDisplay() {
+      this.setState({
+        total: '',
+        equation: ''
+      });
+    }
+  }, {
+    key: "convertToEvalFormat",
+    value: function convertToEvalFormat(newEquation) {
+      if (!newEquation || typeof newEquation !== 'string') {
+        return '';
+      }
+      var evalFormat = this.trimString(newEquation);
+      // remove all nasty chars
+      evalFormat = evalFormat.replace(/[^-()\d/*+.]/g, '');
+      // remove characters after last number
+      evalFormat = evalFormat.replace(/\D+$/g, '');
+      return evalFormat;
+    }
+  }, {
+    key: "trimString",
+    value: function trimString(toTrim) {
+      if (!toTrim || typeof toTrim !== 'string') {
+        return '';
+      }
+      return toTrim.split(' ').join('');
+    }
+  }, {
+    key: "backspace",
+    value: function backspace() {
+      var newEquation = this.state.equation;
+      var lastIndex = newEquation.lastIndexOf(" ");
+      newEquation = newEquation.substring(0, lastIndex);
+      this.setState({ equation: newEquation });
+      console.log(this.state);
+    }
+  }, {
     key: "render",
     value: function render() {
+      var currentOperation = this.trimString(this.state.equation);
       return _react2.default.createElement(
         "div",
         { className: "content" },
         _react2.default.createElement(
           "div",
           { className: _styles2.default.grid },
-          _react2.default.createElement("div", { id: "display", className: _styles2.default.display }),
           _react2.default.createElement(
-            "button",
-            { id: "btn-equals", className: _styles2.default.btnEquals + " btn" },
-            "="
+            "div",
+            { id: "display", className: _styles2.default.display },
+            _react2.default.createElement(
+              "div",
+              { className: _styles2.default.total },
+              this.state.total
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: _styles2.default.equation },
+              currentOperation
+            )
           ),
           _react2.default.createElement(
-            "button",
-            { id: "btn-clear", className: "btn" },
-            "C"
+            "div",
+            { className: _styles2.default.btnEquals, onClick: this.getTotal, onSelect: this.calculate },
+            _react2.default.createElement(_component2.default, { value: "=" })
           ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-del", className: "btn" },
-            "DEL"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-pos-neg", className: "btn" },
-            "+/-"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-plus", className: "btn" },
-            "+"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-one", className: "btn" },
-            "1"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-two", className: "btn" },
-            "2"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-three", className: "btn" },
-            "3"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-minus", className: "btn" },
-            "-"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-four", className: "btn" },
-            "4"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-five", className: "btn" },
-            "5"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-six", className: "btn" },
-            "6"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-times", className: "btn" },
-            "x"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-seven", className: "btn" },
-            "7"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-eight", className: "btn" },
-            "8"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-nine", className: "btn" },
-            "9"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-divide", className: "btn" },
-            "/"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-zero", className: "btn" },
-            "0"
-          ),
-          _react2.default.createElement(
-            "button",
-            { id: "btn-dot", className: "btn" },
-            "."
-          )
+          _react2.default.createElement(_component2.default, { value: "C", onSelect: this.clearDisplay }),
+          _react2.default.createElement(_component2.default, { value: "DEL", onSelect: this.backspace }),
+          _react2.default.createElement(_component2.default, { value: "+/-", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "+", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "1", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "2", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "3", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "-", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "4", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "5", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "6", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "*", label: "x", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "7", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "8", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "9", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "/", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: "0", onSelect: this.calculate }),
+          _react2.default.createElement(_component2.default, { value: ".", onSelect: this.calculate })
         )
       );
     }
@@ -18100,7 +18186,7 @@ var Calulator = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Calulator;
-},{"react":9,"./styles.scss":8}],4:[function(require,module,exports) {
+},{"react":12,"../Button/component":9,"./styles.scss":8}],4:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18170,7 +18256,7 @@ var Index = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Index;
-},{"react":9,"../Calculator/component":6}],2:[function(require,module,exports) {
+},{"react":12,"../Calculator/component":6}],2:[function(require,module,exports) {
 "use strict";
 
 require("./styles/styles.scss");
@@ -18192,7 +18278,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 document.addEventListener('DOMContentLoaded', function () {
   _reactDom2.default.render(_react2.default.createElement(_component2.default, null), document.getElementById('app'));
 });
-},{"./styles/styles.scss":3,"react":9,"react-dom":10,"./Index/component":4}],0:[function(require,module,exports) {
+},{"./styles/styles.scss":3,"react":12,"react-dom":11,"./Index/component":4}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -18210,7 +18296,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':35985/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':44155/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
